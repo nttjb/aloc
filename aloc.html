@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabelblag</title>
+    <link rel="stylesheet" href="alo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Far from home</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" id="aboutBtn">About Us</a></li>
+                    <li><a href="#" id="contactBtn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="trabel">
+        <div class="container">
+            <h2>Explore the world with us</h2>
+            <p>Plan your next adventure with our expert travel advisors.</p>
+            <a href="#" class="button" id="exploreBtn">Explore Destinations</a>
+        </div>
+    </section>
+
+    <section class="destinations" id="destinationsSection">
+        <div class="container">
+            <h2>Featured Destinations</h2>
+            <div class="destination">
+                <img src="content://com.android.providers.media.documents/document/image%3A1000254891" alt="Destination 1">
+                <h3>Paris, France</h3>
+                <p>Experience the romantic charm of Paris.</p>
+        <p>Paris, France, epitomizes timeless elegance with its iconic landmarks, romantic ambiance, and rich artistic heritage.</p>   
+            </div>
+            <div class="destination">
+                <img src = "content://com.android.providers.media.documents/document/image%3A1000254893"alt="Destination 2">
+                <h3>Tokyo, Japan</h3>
+                <p>Explore the vibrant city of Tokyo.</p>
+        <p>Tokyo, Japan, is a vibrant metropolis blending tradition with cutting-edge technology, known for its bustling streets, towering skyscrapers, and rich cultural heritage. </p> 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="aboutSection">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a leading travel agency dedicated to providing unforgettable travel experiences. Our team of expert travel advisors will help you plan your dream vacation, whether it's a romantic getaway, an adventurous expedition</p>
+        </div>
+    </section>
+
+<section class="content://com.android.providers.media.documents/document/image%3A1000254893 " id="contactSection"> 
+        <div class="contact</>ner">
+            <h2>Contact Us</h2>
+            <p>Email: farfromhome@gmail.com</p>
+            <p>Phone: 09123456689</p>
+        </div>
+    </section>
+    
+    <footer></footer>
+
+    <script>
+        document.getElementById('exploreBtn').addEventListener('click', function() {
+            var destinationsSection = document.getElementById('destinationsSection');
+            if (destinationsSection.style.display === 'none') {
+                destinationsSection.style.display = 'block';
+            } else {
+                destinationsSection.style.display = 'none';
+            }
+        });
+
+        document.getElementById('aboutBtn').addEventListener('click', function() {
+            var aboutSection = document.getElementById('aboutSection');
+            if (aboutSection.style.display === 'none') {
+                aboutSection.style.display = 'block';
+            } else {
+                aboutSection.style.display = 'none';
+            }
+        });
+
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            var contactSection = document.getElementById('contactSection');
+            if (contactSection.style.display === 'none') {
+                contactSection.style.display = 'block';
+            } else {
+                contactSection.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
